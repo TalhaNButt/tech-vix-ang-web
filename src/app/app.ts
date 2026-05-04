@@ -147,9 +147,9 @@ export class App implements AfterViewInit, OnDestroy {
         if (entry.isIntersecting) {
           const nums = entry.target.querySelectorAll('.stat-num');
 
-          if (nums[0]) this.animateCounter(nums[0] as HTMLElement, 200, '+');
+          if (nums[0]) this.animateCounter(nums[0] as HTMLElement, 50, '+');
           if (nums[1]) (nums[1] as HTMLElement).textContent = '98%';
-          if (nums[2]) this.animateCounter(nums[2] as HTMLElement, 15, '+');
+          if (nums[2]) this.animateCounter(nums[2] as HTMLElement, 5, '+');
 
           this.statsObserver.unobserve(entry.target);
         }
